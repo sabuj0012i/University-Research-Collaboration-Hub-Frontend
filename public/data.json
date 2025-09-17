@@ -1,0 +1,131 @@
+{
+  
+  "researchers": [
+    {
+      "id": 1,
+      "name": "Dr. Rahman",
+      "designation": "Professor, Computer Science",
+      "university": "University of Dhaka",
+      "email": "rahman@du.ac.bd",
+      "bio": "Researcher in Artificial Intelligence and Data Science with 20+ years of experience.",
+      "image": "/images/rahman.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Prof. Karim",
+      "designation": "Associate Professor, Biomedical Engineering",
+      "university": "BUET",
+      "email": "karim@buet.ac.bd",
+      "bio": "Works on Machine Learning applications in healthcare, focusing on patient data analytics.",
+      "image": "/images/karim.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Dr. Anika",
+      "designation": "Assistant Professor, Business Analytics",
+      "university": "North South University",
+      "email": "anika@nsu.ac.bd",
+      "bio": "Specializes in Data Science applications in business and financial markets.",
+      "image": "/images/anika.jpg"
+    }
+  ],
+  "comments": [
+    {
+      "paperId": 1,
+      "user": "Student1",
+      "comment": "Really interesting approach to personalized learning!"
+    },
+    {
+      "paperId": 2,
+      "user": "Student2",
+      "comment": "Would love to see real-world applications in hospitals."
+    }
+  ],
+   "universities": [
+    {
+      "name": "Dhaka University",
+      "researchers": [
+        {
+          "id": 1,
+          "name": "Dr. Ahsan Habib",
+          "designation": "Professor, CSE Department",
+          "papers": [
+            "AI in Healthcare",
+            "Deep Learning for Climate Prediction",
+            "Blockchain in Education"
+          ]
+        },
+        {
+          "id": 2,
+          "name": "Dr. Farzana Yasmin",
+          "designation": "Associate Professor, EEE Department",
+          "papers": [
+            "Smart Grid Systems",
+            "Renewable Energy Optimization"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "BUET",
+      "researchers": [
+        {
+          "id": 3,
+          "name": "Dr. Kamal Hossain",
+          "designation": "Professor, Civil Engineering",
+          "papers": [
+            "Sustainable Urban Planning",
+            "Flood Risk Management"
+          ]
+        }
+      ]
+    }
+  ],
+   "researchPapers": [
+    {
+      "id": 1,
+      "title": "AI in Healthcare",
+      "author": "Dr. John Smith",
+      "designation": "Professor",
+      "university": "Harvard University",
+      "file": "/pdfs/ai_healthcare.pdf",
+      "year": 2023
+    },
+    {
+      "id": 2,
+      "title": "Blockchain in Education",
+      "author": "Prof. Emily Johnson",
+      "designation": "Associate Professor",
+      "university": "MIT",
+      "file": "/pdfs/blockchain_education.pdf",
+      "year": 2022
+    },
+    {
+      "id": 3,
+      "title": "Climate Change Impact on Agriculture",
+      "author": "Dr. Michael Brown",
+      "designation": "Research Scientist",
+      "university": "Stanford University",
+      "file": "/pdfs/climate_agriculture.pdf",
+      "year": 2021
+    },
+    {
+      "id": 4,
+      "title": "Machine Learning for Drug Discovery",
+      "author": "Dr. Sarah Lee",
+      "designation": "Assistant Professor",
+      "university": "Oxford University",
+      "file": "/pdfs/ml_drug_discovery.pdf",
+      "year": 2024
+    },
+    {
+      "id": 5,
+      "title": "Quantum Computing Applications",
+      "author": "Prof. David Wilson",
+      "designation": "Lecturer",
+      "university": "Cambridge University",
+      "file": "/pdfs/quantum_computing.pdf",
+      "year": 2023
+    }
+  ]
+}
