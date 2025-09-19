@@ -13,7 +13,7 @@ const Sidebar = ({ panel }) => {
     researcher: [
       { to: "/researcher/dashboard", label: "Dashboard", icon: <FaTachometerAlt /> },
       { to: "/researcher/profile", label: "My Profile", icon: <FaUser /> },
-      { to: "/researcher/papers", label: "Papers", icon: <FaFileAlt /> },
+      { to: "/researcher/my-uploads", label: "Papers", icon: <FaFileAlt /> },
       { to: "/researcher/settings", label: "Settings", icon: <MdSettings /> },
     ],
     varsityAdmin: [

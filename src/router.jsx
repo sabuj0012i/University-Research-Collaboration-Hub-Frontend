@@ -68,7 +68,7 @@ const router = createBrowserRouter([
       { path: "/researcher/collaborations", element: <ResearcherCollaborations /> },
       { path: "/researcher/publications", element: <ResearcherPublications /> },
       { path: "/researcher/comments", element: <ResearcherComments /> },
-      { path: "/researcher/upload", element: <UploadPaper /> },
+      { path: "/researcher/upload-paper", element: <UploadPaper /> },
       { path: "/researcher/my-uploads", element: <MyUploads /> },
       { path: "/researcher/profile", element: <ResearcherProfile /> },
     ],
