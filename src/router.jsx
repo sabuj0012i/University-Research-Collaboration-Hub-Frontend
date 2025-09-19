@@ -39,7 +39,7 @@ import SuperAdminUsers from "./components/superadmin/SuperAdminUsers";
 
 const router = createBrowserRouter([
   // Auth (no layout)
-  { path: "/login", element: <Login /> },
+  
   { path: "/register", element: <Register /> },
 
   // Student panel

@@ -79,53 +79,274 @@
           ]
         }
       ]
+    },
+    {
+      "name": "Begum Rokeya University",
+      "researchers": [
+        {
+          "id": 101,
+          "name": "Dr. Md. Mahbubur Rahman",
+          "designation": "Professor, CSE Department",
+          "papers": [
+            "Machine Learning for Crop Yield Prediction",
+            "Data Mining in Social Networks"
+          ]
+        },
+        {
+          "id": 102,
+          "name": "Dr. Md. Mostafizur Rahman",
+          "designation": "Professor, CSE Department",
+          "papers": [
+            "Network Security in IoT",
+            "Cloud Computing Applications"
+          ]
+        },
+        {
+          "id": 103,
+          "name": "Dr. Md. Safayet Hossain",
+          "designation": "Associate Professor, CSE Department",
+          "papers": [
+            "Image Processing for Remote Sensing",
+            "AI-driven Disease Detection"
+          ]
+        },
+        {
+          "id": 104,
+          "name": "Dr. Md. Rezaul Karim",
+          "designation": "Associate Professor, CSE Department",
+          "papers": [
+            "Big Data Analytics",
+            "Mobile Application Security"
+          ]
+        },
+        {
+          "id": 105,
+          "name": "Dr. Md. Nazrul Islam",
+          "designation": "Associate Professor, CSE Department",
+          "papers": [
+            "Blockchain for Secure Transactions",
+            "Text Mining in Bangla Language"
+          ]
+        },
+        {
+          "id": 106,
+          "name": "Dr. Md. Mizanur Rahman",
+          "designation": "Assistant Professor, CSE Department",
+          "papers": [
+            "Smart Agriculture using IoT",
+            "AI for Medical Diagnosis"
+          ]
+        },
+        {
+          "id": 107,
+          "name": "Dr. Md. Tarek Hossain",
+          "designation": "Assistant Professor, CSE Department",
+          "papers": [
+            "Natural Language Processing",
+            "Sentiment Analysis on Social Media"
+          ]
+        },
+        {
+          "id": 108,
+          "name": "Dr. S. M. Rashedul Islam",
+          "designation": "Assistant Professor, CSE Department",
+          "papers": [
+            "Wireless Sensor Networks",
+            "Robotics in Disaster Management"
+          ]
+        },
+        {
+          "id": 109,
+          "name": "Dr. Md. Shafiqul Islam",
+          "designation": "Lecturer, CSE Department",
+          "papers": [
+            "Deep Learning in Image Recognition",
+            "AI in Education Technology"
+          ]
+        },
+        {
+          "id": 110,
+          "name": "Dr. Md. Tanvir Hossain",
+          "designation": "Lecturer, CSE Department",
+          "papers": [
+            "Cybersecurity Awareness",
+            "E-Governance Platforms"
+          ]
+        },
+        {
+          "id": 111,
+          "name": "Dr. Md. Rabiul Islam",
+          "designation": "Lecturer, CSE Department",
+          "papers": [
+            "Machine Translation for Bangla-English",
+            "AI in Financial Technology"
+          ]
+        },
+        {
+          "id": 112,
+          "name": "Dr. Md. Saiful Islam",
+          "designation": "Lecturer, CSE Department",
+          "papers": [
+            "Cloud Storage Optimization",
+            "Mobile Health Monitoring"
+          ]
+        },
+        {
+          "id": 113,
+          "name": "Dr. Md. Rezaul Islam",
+          "designation": "Lecturer, CSE Department",
+          "papers": [
+            "Data Science for Climate Change",
+            "AI Based Traffic Management"
+          ]
+        },
+        {
+          "id": 114,
+          "name": "Dr. Md. Shahidul Islam",
+          "designation": "Lecturer, CSE Department",
+          "papers": [
+            "AI in Agriculture Robotics",
+            "Speech Recognition Systems"
+          ]
+        },
+        {
+          "id": 115,
+          "name": "Dr. Md. Mofazzal Hossain",
+          "designation": "Lecturer, CSE Department",
+          "papers": [
+            "Computer Vision for Security",
+            "Smart City Solutions"
+          ]
+        },
+        {
+          "id": 116,
+          "name": "Dr. Md. Abdul Kader",
+          "designation": "Lecturer, CSE Department",
+          "papers": [
+            "IoT Based Monitoring Systems",
+            "AI for Early Disease Detection"
+          ]
+        },
+        {
+          "id": 117,
+          "name": "Dr. Md. Mamunur Rashid",
+          "designation": "Lecturer, CSE Department",
+          "papers": [
+            "Pattern Recognition in Medical Images",
+            "Big Data for Smart Cities"
+          ]
+        }
+      ]
     }
   ],
-   "researchPapers": [
+  "researchPapers": [
     {
       "id": 1,
       "title": "AI in Healthcare",
-      "author": "Dr. John Smith",
-      "designation": "Professor",
-      "university": "Harvard University",
-      "file": "/pdfs/ai_healthcare.pdf",
-      "year": 2023
+      "author": "Dr. Ahsan Habib",
+      "designation": "Professor, CSE Department",
+      "university": "Dhaka University",
+      "year": 2023,
+      "file": "/papers/ai-in-healthcare.pdf"
     },
     {
       "id": 2,
-      "title": "Blockchain in Education",
-      "author": "Prof. Emily Johnson",
-      "designation": "Associate Professor",
-      "university": "MIT",
-      "file": "/pdfs/blockchain_education.pdf",
-      "year": 2022
+      "title": "Deep Learning for Climate Prediction",
+      "author": "Dr. Ahsan Habib",
+      "designation": "Professor, CSE Department",
+      "university": "Dhaka University",
+      "year": 2022,
+      "file": "/papers/deep-learning-climate.pdf"
     },
     {
       "id": 3,
-      "title": "Climate Change Impact on Agriculture",
-      "author": "Dr. Michael Brown",
-      "designation": "Research Scientist",
-      "university": "Stanford University",
-      "file": "/pdfs/climate_agriculture.pdf",
-      "year": 2021
+      "title": "Blockchain in Education",
+      "author": "Dr. Ahsan Habib",
+      "designation": "Professor, CSE Department",
+      "university": "Dhaka University",
+      "year": 2021,
+      "file": "/papers/blockchain-education.pdf"
     },
     {
       "id": 4,
-      "title": "Machine Learning for Drug Discovery",
-      "author": "Dr. Sarah Lee",
-      "designation": "Assistant Professor",
-      "university": "Oxford University",
-      "file": "/pdfs/ml_drug_discovery.pdf",
-      "year": 2024
+      "title": "Smart Grid Systems",
+      "author": "Dr. Farzana Yasmin",
+      "designation": "Associate Professor, EEE Department",
+      "university": "Dhaka University",
+      "year": 2024,
+      "file": "/papers/smart-grid-systems.pdf"
     },
     {
       "id": 5,
-      "title": "Quantum Computing Applications",
-      "author": "Prof. David Wilson",
-      "designation": "Lecturer",
-      "university": "Cambridge University",
-      "file": "/pdfs/quantum_computing.pdf",
-      "year": 2023
+      "title": "Renewable Energy Optimization",
+      "author": "Dr. Farzana Yasmin",
+      "designation": "Associate Professor, EEE Department",
+      "university": "Dhaka University",
+      "year": 2023,
+      "file": "/papers/renewable-energy-optimization.pdf"
+    },
+    {
+      "id": 6,
+      "title": "Sustainable Urban Planning",
+      "author": "Dr. Kamal Hossain",
+      "designation": "Professor, Civil Engineering",
+      "university": "BUET",
+      "year": 2023,
+      "file": "/papers/sustainable-urban-planning.pdf"
+    },
+    {
+      "id": 7,
+      "title": "Flood Risk Management",
+      "author": "Dr. Kamal Hossain",
+      "designation": "Professor, Civil Engineering",
+      "university": "BUET",
+      "year": 2022,
+      "file": "/papers/flood-risk-management.pdf"
+    },
+    {
+      "id": 8,
+      "title": "Machine Learning for Crop Yield Prediction",
+      "author": "Dr. Md. Mahbubur Rahman",
+      "designation": "Professor, CSE Department",
+      "university": "Begum Rokeya University",
+      "year": 2022,
+      "file": "/papers/crop-yield-ml.pdf"
+    },
+    {
+      "id": 9,
+      "title": "Network Security in IoT",
+      "author": "Dr. Md. Mostafizur Rahman",
+      "designation": "Professor, CSE Department",
+      "university": "Begum Rokeya University",
+      "year": 2023,
+      "file": "/papers/iot-network-security.pdf"
+    },
+    {
+      "id": 10,
+      "title": "Big Data Analytics",
+      "author": "Dr. Md. Rezaul Karim",
+      "designation": "Associate Professor, CSE Department",
+      "university": "Begum Rokeya University",
+      "year": 2024,
+      "file": "/papers/big-data-analytics.pdf"
+    },
+    {
+      "id": 11,
+      "title": "Image Processing for Remote Sensing",
+      "author": "Dr. Md. Safayet Hossain",
+      "designation": "Associate Professor, CSE Department",
+      "university": "Begum Rokeya University",
+      "year": 2023,
+      "file": "/papers/image-processing-remote-sensing.pdf"
+    },
+    {
+      "id": 12,
+      "title": "AI-driven Disease Detection",
+      "author": "Dr. Md. Safayet Hossain",
+      "designation": "Associate Professor, CSE Department",
+      "university": "Begum Rokeya University",
+      "year": 2022,
+      "file": "/papers/ai-disease-detection.pdf"
     }
   ]
 }
