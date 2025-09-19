@@ -10,7 +10,7 @@ const Register = () => {
 
     // form validation automatically handled by "required"
     // তাই এখানে সরাসরি redirect করা যাবে
-    navigate("/login");
+    navigate("/");
   };
 
   return (

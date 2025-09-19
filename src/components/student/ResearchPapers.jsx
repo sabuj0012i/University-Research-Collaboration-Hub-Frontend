@@ -5,24 +5,57 @@ const ResearchPapers = () => {
   const [papers, setPapers] = useState([]);
 
   useEffect(() => {
+    // Dummy data.json থেকে ডাটা লোড
     fetch("/data.json")
       .then((res) => res.json())
-      .then((data) => setPapers(data.researchPapers || []));
+      .then((data) => {
+        const dummyPapers = data.researchPapers || [];
+
+        // LocalStorage থেকে Upload করা papers লোড
+        const localPapers = JSON.parse(localStorage.getItem("myUploads")) || [];
+
+        // Merge করে set
+        setPapers([...dummyPapers, ...localPapers]);
+      });
   }, []);
 
+  // ✅ Paper Save handler
   const handleSave = (paper) => {
+    const existing = JSON.parse(localStorage.getItem("savedResources")) || [];
+
+    // Duplicate চেক
+    const alreadySaved = existing.find((p) => p.id === paper.id);
+    if (alreadySaved) {
+      alert("Already saved!");
+      return;
+    }
+
+    existing.push(paper);
+    localStorage.setItem("savedResources", JSON.stringify(existing));
+
     alert(`Saved: ${paper.title}`);
   };
 
-  const handleDownload = (file) => {
+  // ✅ PDF Download
+  const handleDownload = (file, title) => {
     const link = document.createElement("a");
     link.href = file;
-    link.download = file.split("/").pop();
+    link.download = `${title}.pdf`;
     link.click();
   };
 
+  // ✅ PDF View (base64 হলে iframe এ show করবে)
   const handleView = (file) => {
-    window.open(file, "_blank");
+    if (!file) return;
+
+    if (file.startsWith("data:application/pdf")) {
+      const pdfWindow = window.open();
+      pdfWindow.document.write(
+        `<iframe width='100%' height='100%' src='${file}'></iframe>`
+      );
+    } else {
+      window.open(file, "_blank");
+    }
   };
 
   return (
@@ -46,14 +79,21 @@ const ResearchPapers = () => {
 
             {/* Paper Info */}
             <div className="flex-1 text-base px-6 py-4">
-              <p className="text-gray-800 text-base  mb-2">
-                {paper.designation}, {paper.university}
-              </p>
-              <span className="inline-block bg-gray-200 text-gray-700 rounded-full px-3 py-1 text-sm font-semibold mb-4">
-                Published: {paper.year}
-              </span>
+              {paper.abstract && (
+                <p className="text-gray-700 text-sm mb-2">{paper.abstract}</p>
+              )}
+              {paper.university && (
+                <p className="text-gray-800 text-base mb-2">
+                  {paper.designation}, {paper.university}
+                </p>
+              )}
+              {paper.year && (
+                <span className="inline-block bg-gray-200 text-gray-700 rounded-full px-3 py-1 text-sm font-semibold mb-4">
+                  Published: {paper.year}
+                </span>
+              )}
             </div>
-            
+
             {/* Actions */}
             <div className="flex justify-around items-center px-6 py-4 border-t border-gray-100 bg-gray-50 rounded-b-2xl">
               <button
@@ -63,13 +103,17 @@ const ResearchPapers = () => {
                 <Bookmark className="w-5 h-5 mr-1" /> Save
               </button>
               <button
-                onClick={() => handleView(paper.file)}
+                onClick={() =>
+                  handleView(paper.file || paper.pdf) // file (dummy) or pdf (local)
+                }
                 className="flex items-center text-base cursor-pointer text-indigo-700 hover:text-white hover:bg-indigo-600 font-medium px-3 py-1 rounded-lg transition"
               >
                 <Eye className="w-5 h-5 mr-1" /> View
               </button>
               <button
-                onClick={() => handleDownload(paper.file)}
+                onClick={() =>
+                  handleDownload(paper.file || paper.pdf, paper.title)
+                }
                 className="flex items-center text-base cursor-pointer text-green-700 hover:text-white hover:bg-green-600 font-medium px-3 py-1 rounded-lg transition"
               >
                 <Download className="w-5 h-5 mr-1" /> Download
