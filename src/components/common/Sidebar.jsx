@@ -20,14 +20,13 @@ const Sidebar = ({ panel }) => {
       { to: "/admin/dashboard", label: "Dashboard", icon: <FaTachometerAlt /> },
       { to: "/admin/researchermanagement", label: "Researchers", icon: <FaUsers /> },
       { to: "/admin/papermanagement", label: "Papers", icon: <FaFileAlt /> },
-      { to: "/admin/comments", label: "Comments", icon: <FaComments /> },
+     
       { to: "/admin/settings", label: "Settings", icon: <MdSettings /> },
     ],
     superAdmin: [
       { to: "/superadmin/dashboard", label: "Dashboard", icon: <FaTachometerAlt /> },
       { to: "/superadmin/users", label: "Users", icon: <FaUsers /> },
       { to: "/superadmin/papers", label: "Papers", icon: <FaFileAlt /> },
-      { to: "/superadmin/messages", label: "Messages", icon: <FaComments /> },
       { to: "/superadmin/settings", label: "Settings", icon: <MdSettings /> },
     ],
   };

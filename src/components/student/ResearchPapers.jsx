@@ -46,7 +46,7 @@ const ResearchPapers = () => {
 
             {/* Paper Info */}
             <div className="flex-1 text-base px-6 py-4">
-              <p className="text-gray-800 text-xl  mb-2">
+              <p className="text-gray-800 text-base  mb-2">
                 {paper.designation}, {paper.university}
               </p>
               <span className="inline-block bg-gray-200 text-gray-700 rounded-full px-3 py-1 text-sm font-semibold mb-4">
