@@ -18,8 +18,8 @@ const Login = ({ onClose }) => {
     const password = e.target.password.value.trim();
 
     if (email && password) {
-      onClose();  // Close modal on success
-      navigate("/"); // You can change redirect logic if needed
+      onClose(); 
+      navigate("/"); 
     } else {
       alert("Please fill all fields before login!");
     }
@@ -125,7 +125,7 @@ const Home = () => {
   const navigate = useNavigate();
   const [showLogin, setShowLogin] = useState(false);
 
-  // Utility to blur content when modal is open
+ 
   const blurIfModal = showLogin ? "blur-sm pointer-events-none select-none" : "";
 
   return (

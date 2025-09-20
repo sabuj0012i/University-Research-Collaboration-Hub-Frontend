@@ -10,7 +10,7 @@ const MyUploads = ({ researcherEmail = "rahman@du.ac.bd" }) => {
     fetch("/data.json")
       .then((res) => res.json())
       .then((data) => {
-        // Filter papers by the given researcher email (adjust logic as needed)
+        
         const myPapers = (data.researchPapers || []).filter(
           paper =>
             paper.email === researcherEmail ||
@@ -22,7 +22,7 @@ const MyUploads = ({ researcherEmail = "rahman@du.ac.bd" }) => {
 
   return (
     <div className="max-w-3xl mx-auto bg-white p-6 rounded-2xl shadow-lg">
-      {/* Upload Papers Button */}
+   
       <div className="flex justify-between items-center mb-8">
         <h2 className="text-2xl font-bold">My Uploaded Papers</h2>
         <button
@@ -54,7 +54,7 @@ const MyUploads = ({ researcherEmail = "rahman@du.ac.bd" }) => {
               {paper.abstract && (
                 <p className="text-gray-600 text-sm mb-2">{paper.abstract}</p>
               )}
-              {/* You can add Download/View buttons here if needed */}
+             
             </div>
           ))}
         </div>

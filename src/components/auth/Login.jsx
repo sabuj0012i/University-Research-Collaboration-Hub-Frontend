@@ -5,7 +5,6 @@ import { Link, useNavigate } from "react-router-dom";
 const Login = () => {
   const navigate = useNavigate();
 
-  // Form Submit Handler
   const handleSubmit = (e) => {
     e.preventDefault();
 

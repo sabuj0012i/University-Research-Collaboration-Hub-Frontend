@@ -93,7 +93,7 @@ const SuperAdminDashboard = () => {
   );
 };
 
-// Researcher Add Form
+
 const ResearcherForm = ({ onAdd }) => {
   const [form, setForm] = useState({ name: "", email: "", field: "" });
 

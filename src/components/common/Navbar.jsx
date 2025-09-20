@@ -1,4 +1,4 @@
-// src/components/Navbar.jsx
+
 import React, { useEffect, useRef, useState } from "react";
 import { Bell } from "lucide-react";
 import { NavLink } from "react-router-dom";
@@ -43,7 +43,7 @@ const Navbar = ({ onSearch }) => {
   const handleSearch = (e) => {
     const value = e.target.value;
     setQuery(value);
-    onSearch?.(value); // ✅ optional chaining, আপনার structure নষ্ট না করেই
+    onSearch?.(value); 
   };
 
   return (

@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 
-// Helper for designation badge colors
 const designationColors = {
   "Professor": "bg-purple-100 text-purple-700",
   "Associate Professor": "bg-blue-100 text-blue-700",

@@ -1,4 +1,4 @@
-// src/components/Register.jsx
+
 import React from "react";
 import { useNavigate } from "react-router-dom";
 
@@ -8,8 +8,6 @@ const Register = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    // form validation automatically handled by "required"
-    // তাই এখানে সরাসরি redirect করা যাবে
     navigate("/");
   };
 

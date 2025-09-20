@@ -9,7 +9,7 @@ import {
   ResponsiveContainer,
 } from "recharts";
 
-// Dummy Data (Backend থেকে আনতে পারবেন)
+
 const data = [
   { day: "Mon", users: 10 },
   { day: "Tue", users: 15 },
@@ -21,7 +21,7 @@ const data = [
 ];
 
 const SuperAdminUsers = () => {
-  // Total users হিসাব
+
   const totalUsers = data.reduce((acc, cur) => acc + cur.users, 0);
 
   return (

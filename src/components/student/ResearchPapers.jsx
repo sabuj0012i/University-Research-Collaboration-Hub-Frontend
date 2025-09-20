@@ -5,21 +5,21 @@ const ResearchPapers = () => {
   const [papers, setPapers] = useState([]);
 
   useEffect(() => {
-    // Dummy data.json থেকে ডাটা লোড
+  
     fetch("/data.json")
       .then((res) => res.json())
       .then((data) => {
         const dummyPapers = data.researchPapers || [];
 
-        // LocalStorage থেকে Upload করা papers লোড
+       
         const localPapers = JSON.parse(localStorage.getItem("myUploads")) || [];
 
-        // Merge করে set
+      
         setPapers([...dummyPapers, ...localPapers]);
       });
   }, []);
 
-  // ✅ Paper Save handler
+ 
   const handleSave = (paper) => {
     const existing = JSON.parse(localStorage.getItem("savedResources")) || [];
 
@@ -36,7 +36,7 @@ const ResearchPapers = () => {
     alert(`Saved: ${paper.title}`);
   };
 
-  // ✅ PDF Download
+ 
   const handleDownload = (file, title) => {
     const link = document.createElement("a");
     link.href = file;
@@ -44,7 +44,7 @@ const ResearchPapers = () => {
     link.click();
   };
 
-  // ✅ PDF View (base64 হলে iframe এ show করবে)
+ 
   const handleView = (file) => {
     if (!file) return;
 
@@ -104,7 +104,7 @@ const ResearchPapers = () => {
               </button>
               <button
                 onClick={() =>
-                  handleView(paper.file || paper.pdf) // file (dummy) or pdf (local)
+                  handleView(paper.file || paper.pdf) 
                 }
                 className="flex items-center text-base cursor-pointer text-indigo-700 hover:text-white hover:bg-indigo-600 font-medium px-3 py-1 rounded-lg transition"
               >

@@ -348,5 +348,20 @@
       "year": 2022,
       "file": "/papers/ai-disease-detection.pdf"
     }
+  ],
+  "aresearchers": [
+    { "id": 1, "name": "Dr. Rahman", "field": "Computer Science" },
+    { "id": 2, "name": "Dr. Karim", "field": "Physics" },
+    { "id": 3, "name": "Dr. Ayesha", "field": "Mathematics" }
+  ],
+  "aresearchPapers": [
+    { "id": 1, "title": "AI in Healthcare", "author": "Dr. Rahman" },
+    { "id": 2, "title": "Quantum Computing", "author": "Dr. Karim" }
+  ],
+  "flaggedPapers": [
+    { "id": 1, "title": "Fake Data Analysis", "reason": "Plagiarism" }
+  ],
+  "pendingApprovals": [
+    { "id": 1, "title": "Blockchain in Education", "submittedBy": "Dr. Ayesha" }
   ]
 }

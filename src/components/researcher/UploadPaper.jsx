@@ -7,7 +7,7 @@ const UploadPaper = () => {
   const [pdfFile, setPdfFile] = useState(null);
   const [success, setSuccess] = useState(false);
 
-  // Convert file to Base64
+  
   const fileToBase64 = (file) =>
     new Promise((resolve, reject) => {
       const reader = new FileReader();
@@ -24,7 +24,7 @@ const UploadPaper = () => {
       return;
     }
 
-    // Convert PDF to base64
+    
     const pdfBase64 = await fileToBase64(pdfFile);
 
     const newPaper = {
@@ -32,7 +32,7 @@ const UploadPaper = () => {
       title,
       abstract,
       author,
-      pdf: pdfBase64, // save pdf as base64 string
+      pdf: pdfBase64, 
     };
 
     const existing = JSON.parse(localStorage.getItem("myUploads")) || [];
